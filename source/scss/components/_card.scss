@@ -1,0 +1,17 @@
+.card {
+  
+  &__img-top img{
+    width: 100%;
+    height: 224px;
+    border-radius: 8px;
+    @include mq(lg) {
+      height: 400px;
+    }
+  }
+
+  &__img-top .text {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

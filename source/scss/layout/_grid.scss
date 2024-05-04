@@ -2,6 +2,8 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
   @include mq(md){
     max-width: 720px;
   }
@@ -46,7 +48,7 @@
       }
     }
   } @else {
-    @media screen and (max-width: $value) {
+    @media screen and (min-width: $value) {
       @for $var from 1 through $grid-sum  {
         .col-#{$key}-#{$var} {
           max-width: 100% * ($var / $grid-sum);

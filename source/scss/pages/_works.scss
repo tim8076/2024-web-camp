@@ -1,0 +1,78 @@
+.works-titles {
+  padding-top: 104px;
+  @include mq(lg) {
+    padding-top: 139px;
+  }
+
+  .underline {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 108px;
+      height: 6px;
+      background-image: url('../../images/decos/underline.png');
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+  
+  &__sentence {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      @include mq(lg) {
+        width: 72px;
+        height: 72px;
+      }
+    }
+  }
+  &__sentence:first-child {
+    &::before {
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('../../images/icon/quote-left.png');
+      background-size: cover;
+      @include mq(lg) {
+        left: 34%;
+      }
+    }
+  }
+  &__sentence:nth-child(2) {
+    @include mq(lg) {
+      margin-bottom: 83px;
+      &::before {
+        bottom: -128%;
+        right: 33%;
+        background-image: url('../../images/icon/quote-right.png');
+        background-size: cover;
+      }
+    }
+  }
+  &__list {
+    width: 235px;
+    @include mq(lg) {
+      width: 298px;
+    }
+  }
+  &__list h2{
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 24px;
+      height: 2px;
+      background-color: #C1C1C1;
+    }
+  }
+}

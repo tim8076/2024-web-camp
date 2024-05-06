@@ -1,17 +1,36 @@
 .card {
   
-  &__img-top img{
+  &__img-top {
+    position: relative;
+  }
+  &__img-top:hover img{
+    transform: scale(1.2);
+  }
+
+  &__img-top .image-area {
+    cursor: pointer;
     width: 100%;
     height: 224px;
     border-radius: 8px;
+    overflow: hidden;
     @include mq(lg) {
       height: 400px;
     }
+  }
+
+  &__img-top img{
+    transition: all 500ms ease-in-out;
+    width: 100%;
+    height: 100%;
   }
 
   &__img-top .text {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  &__img-top .link {
+    position: absolute;
+    inset: 0;
   }
 }

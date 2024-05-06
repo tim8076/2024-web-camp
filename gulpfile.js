@@ -20,7 +20,7 @@ const path = {
   },
   scss: {
     src: './source/scss/**/*.scss',
-    des: './public/css'
+    des: './public/css/style'
   },
   js: {
     src: './source/js/**/*.js',

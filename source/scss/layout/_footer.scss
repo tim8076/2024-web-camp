@@ -6,12 +6,17 @@
   @include mq(lg) {
     background-image: url('../../images/bgm/footer-bg-lg.png');
   }
+  &__list {
+    padding-right: 22.5px;
+    padding-left: 22.5px;
+    @include mq(md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
   &__logo {
     width: 120px;
     height: 54px;
     object-fit: contain;
-  }
-  &__list {
-    width: 306px;
   }
 }

@@ -6,6 +6,8 @@
   padding-right: $gutter-width / 2;
   @include mq(md){
     max-width: 740px;
+    padding-right: 0;
+    padding-left: 0;
   }
   @include mq(lg){
     max-width: 1296px;
@@ -27,6 +29,13 @@
   margin-right: -($gutter-width / 2);
 }
 
+.row > * {
+  width: 100%;
+  max-width: 100%;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+}
+
 .no-gutters {
   margin-left: 0px;
   margin-right: 0px;
@@ -43,8 +52,6 @@
       .col-#{$var} {
         max-width: 100% * ($var / $grid-sum);
         flex: 0 0 (100% * ($var / $grid-sum));
-        padding-left: $gutter-width / 2;
-        padding-right: $gutter-width / 2;
       }
     }
   } @else {

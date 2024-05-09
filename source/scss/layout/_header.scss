@@ -1,8 +1,15 @@
 .header {
   position: relative;
   &__logo {
+    background-image: url('../../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
     width: 74px;
     height: 33px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
 
     @include mq(md) {
       width: 90px;

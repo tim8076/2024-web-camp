@@ -7,9 +7,6 @@
 @import './base/reset';
 @import './base/base';
 
-// utils
-@import './utils/utils';
-
 //layout
 @import './layout/grid';
 @import './layout/header';
@@ -22,3 +19,6 @@
 //components
 @import './components/button';
 @import './components/card';
+
+// utils
+@import './utils/utils';

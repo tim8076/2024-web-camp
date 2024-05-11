@@ -76,3 +76,12 @@
     }
   }
 }
+
+.works-list {
+  .image-area {
+    height: 224px;
+    @include mq(lg) {
+      height: 400px;
+    }
+  }
+}

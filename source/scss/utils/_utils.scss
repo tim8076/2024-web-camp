@@ -2,10 +2,12 @@
 $utilities: (
   'color': (
     'prefix': 'text',
+    'responsive': true,
     'values': $theme-colors,
   ),
   'background-color': (
     'prefix': 'bg',
+    'responsive': true,
     'values': $theme-colors,
   ),
   'font-size': (
@@ -32,6 +34,7 @@ $utilities: (
   ),
   'line-height': (
     'prefix': 'lh',
+    'responsive': true,
     'values': $line-heights,
   ),
   'padding': (
@@ -51,6 +54,7 @@ $utilities: (
   ),
   "padding-top": (
     "prefix": "pt",
+    'responsive': true,
     "values": $spacers,
   ),
   "padding-bottom": (
@@ -276,6 +280,10 @@ $utilities: (
     margin-top: $value;
     margin-bottom: $value;
   }
+  .mx-neg-#{$key} {
+    margin-right: -$value;
+    margin-left: -$value;
+  }
   .px-#{$key} {
     padding-right: $value;
     padding-left: $value;
@@ -297,6 +305,10 @@ $utilities: (
         .my-#{$breakpoint}-#{$key} {
           margin-top: $value;
           margin-bottom: $value;
+        }
+        .mx-neg-#{$breakpoint}-#{$key} {
+          margin-right: -$value;
+          margin-left: -$value;
         }
         .px-#{$breakpoint}-#{$key} {
           padding-right: $value;

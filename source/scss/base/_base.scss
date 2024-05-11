@@ -12,3 +12,47 @@ a {
   color: $color-primary-900;
   text-decoration: none;
 }
+
+.secondary-title {
+  position: relative;
+  letter-spacing: 1.2px;
+  font-size: $fs-4;
+  font-weight: $font-weight-bold;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+
+  &::before,
+  &::after {
+    position: absolute;
+    height: 6px;
+    width: 56px;
+    top: -4%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: url('../../images/decos/title-deco-left-sm.png');
+    left: calc(50% - 118px);
+    @include mq(md) {
+      content: url('../../images/decos/title-deco-left-lg.png');
+      left: calc(50% - 182px);
+      top: -10%;
+    }
+  }
+
+  &::after {
+    content: url('../../images/decos/title-deco-right-sm.png');
+    right: calc(50% - 118px);
+    @include mq(md) {
+      content: url('../../images/decos/title-deco-right-lg.png');
+      right: calc(50% - 135px);
+      top: -10%;
+    }
+  }
+
+  @include mq(md) {
+    font-size: $fs-2;
+    margin-bottom: 80px;
+  }
+}

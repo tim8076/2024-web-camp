@@ -28,7 +28,6 @@
   &__img-top .text {
     padding-top: 1rem;
     padding-left: 1rem;
-    padding-right: 1rem;
   }
   &__img-top .link {
     position: absolute;
@@ -41,5 +40,29 @@
     align-items: center;
     border: none;
     background-image: url('../../images/bgm/service-item-bg.png');
+  }
+
+  &__step {
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    border: 1px solid $color-primary-500;
+    border-radius: .25rem;
+    background-color: $color-primary-700;
+    @include mq(md) {
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  &__shadow {
+    border: 0;
+    flex-direction: row;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    background-color: $color-primary-100;
+    color: $color-primary-600;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+    @include mq(md) {
+      padding: 2rem;
+    }
   }
 }

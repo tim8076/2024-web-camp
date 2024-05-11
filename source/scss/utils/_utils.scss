@@ -32,6 +32,10 @@ $utilities: (
     'prefix': 'fst',
     'values': $font-styles,
   ),
+  'font-family': (
+    'prefix': 'fm',
+    'values': $font-family,
+  ),
   'line-height': (
     'prefix': 'lh',
     'responsive': true,

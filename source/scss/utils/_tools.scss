@@ -1,6 +1,9 @@
 .object-cover {
   object-fit: cover;
 }
+.object-contain {
+  object-fit: contain;
+}
 .bg-cover {
   background-repeat: no-repeat;
   background-size: cover;

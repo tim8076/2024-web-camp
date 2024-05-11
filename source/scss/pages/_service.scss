@@ -1,0 +1,31 @@
+.service-page {
+  &__steps {
+    background-image: url('../../images/bgm/process-bg.png');
+  }
+  &__steps li {
+    position: relative;
+    .arrow-icon {
+      color: $color-primary-600;
+      font-size: 2rem;
+      position: absolute;
+      bottom: -48px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__price .card__shadow {
+    .icon {
+      width: 40px;
+      height: 40px;
+      @include mq(md) {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    .line {
+      flex-grow: 1;
+      height: 1px;
+      background-color: $color-primary-400;
+    }
+  }
+}

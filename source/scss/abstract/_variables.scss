@@ -34,7 +34,7 @@ $opacity-list: (
 
 //font-size
 $fs-base: 1rem;           //16px
-$fs-lg: $fs-base * 4.5;     //72px
+$fs-xl: $fs-base * 4.5;     //72px
 $fs-lg: $fs-base * 3;     //48px
 $fs-1:  $fs-base * 2.5;   //40px
 $fs-2:  $fs-base * 2;     //32px
@@ -44,12 +44,14 @@ $fs-5:  $fs-base * 1.25;  //20px
 $fs-6:  $fs-base ;        //16px
 
 $font-sizes: (
-   1: $fs-1, 
-   2: $fs-2, 
-   3: $fs-3, 
-   4: $fs-4, 
-   5: $fs-5, 
-   6: $fs-6,
+  1: $fs-1, 
+  2: $fs-2, 
+  3: $fs-3, 
+  4: $fs-4, 
+  5: $fs-5, 
+  6: $fs-6,
+  lg: $fs-lg,
+  xl: $fs-xl,
 );
 
 //font-weight
@@ -71,6 +73,15 @@ $font-weights: (
 $font-styles: (
   italic: italic,
   normal: normal,
+);
+
+// font-family
+$font-sans: "Noto Sans TC", sans-serif;
+$font-tourney: "Tourney", sans-serif;
+
+$font-family: (
+  noto-sans-tc: $font-sans,
+  tourney: $font-tourney,
 );
 
 //light-height
@@ -159,6 +170,7 @@ $spacers: (
   4: $spacer * .75,   //12px
   5: $spacer,         //16px
   6: $spacer * 1.25,  //20px
+  6h: 22.5px , //22.5px
   7: $spacer * 1.5,   //24px
   8: $spacer * 1.75,  //28px
   9: $spacer * 1.875, //30px

@@ -1,0 +1,31 @@
+// 展開手機選單
+.showMenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+// 手機選單展開時body固定
+body {
+  &::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: $base-transition;
+  }
+}
+.bodyFixed {
+  position: relative;
+  overflow-y: hidden;
+  &::before {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+  }
+}
+
+
+
+

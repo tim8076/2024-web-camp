@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  transition: $base-transition;
   &__logo {
     background-image: url('../../images/logo.png');
     background-repeat: no-repeat;
@@ -20,9 +21,28 @@
       transform: translateY(-50%);
     }
   }
+  
+  &__links a {
+    transition: $base-transition;
+    &.active,
+    &:hover {
+      font-weight: $font-weight-bold;
+    }
+  }
 
-  &__links a.active,
-  &__links a:hover{
-    font-weight: $font-weight-bold;
+  &__phone-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $color-primary-50;
+    padding: 40px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: $base-transition;
+    .link {
+      display: block;
+      text-align: center;
+    }
   }
 }

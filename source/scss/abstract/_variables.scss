@@ -270,6 +270,14 @@ $position-values: (
   100: 100%
 );
 
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3
+);
+
 $translate-values: (
   null: translate(-50%, -50%),
   x: translateX(-50%),
@@ -296,3 +304,6 @@ $grid-breakpoints: (
   'md': 768px,
   'lg': 1400px,
 );
+
+// transition
+$base-transition: all 500ms ease-in-out;

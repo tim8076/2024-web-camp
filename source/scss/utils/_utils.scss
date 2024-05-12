@@ -209,6 +209,11 @@ $utilities: (
     'responsive': true,
     "values": $position-values,
   ),
+  "z-index": (
+    "prefix": "z-index",
+    'responsive': true,
+    "values": $zindex-levels,
+  ),
   "transform": (
     "prefix": "translate-middle",
     'responsive': true,

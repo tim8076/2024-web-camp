@@ -14,7 +14,8 @@
   <title><%- title %></title>
 </head>
 <body>
-  <header>
+  <header class="position-sticky top-0 left-0 z-index-3 bg-primary-50 border-bottom
+    border-primary-200" data-header>
     <div class="container py-2 px-4 py-md-10 px-lg-0">
       <div class="header d-flex justify-content-between align-items-center justify-content-lg-center">
         <h1>
@@ -22,13 +23,13 @@
         </h1>
         <ul class="header__links d-none d-lg-flex align-items-center">
           <li class="mr-12">
-            <a href="#" class="d-block py-1 px-2">首頁</a>
+            <a href="index.html" class="d-block py-1 px-2">首頁</a>
           </li>
           <li class="mr-12">
-            <a href="#" class="d-block py-1 px-2">作品集</a>
+            <a href="works.html" class="d-block py-1 px-2">作品集</a>
           </li>
           <li class="mr-12">
-            <a href="#" class="d-block py-1 px-2">服務項目</a>
+            <a href="service.html" class="d-block py-1 px-2">服務項目</a>
           </li>
           <li class="mr-12">
             <a href="#" class="d-block py-1 px-2">部落格</a>
@@ -37,11 +38,28 @@
             <a href="#" class="d-block py-1 px-2">聯絡我</a>
           </li>
         </ul>
-        <a href="#" class="lh-0 d-lg-none">
+        <a href="#" class="lh-0 d-lg-none" data-menu-button>
           <span class="material-symbols-rounded fs-1">menu</span>
         </a>
       </div>
     </div>
+    <ul class="header__phone-menu hidden" data-menu-phone>
+      <li>
+        <a href="index.html" class="link fs-5 py-1 mb-7">首頁</a>
+      </li>
+      <li>
+        <a href="works.html" class="link fs-5 py-1 mb-7">作品集</a>
+      </li>
+      <li>
+        <a href="service.html" class="link fs-5 py-1 mb-7">服務項目</a>
+      </li>
+      <li>
+        <a href="#" class="link fs-5 py-1 mb-7">部落格</a>
+      </li>
+      <li>
+        <a href="#" class="link fs-5 py-1">聯絡我</a>
+      </li>
+    </ul>
   </header>
   <%- contents %>
   <footer class="footer py-12 py-lg-18 bg-primary-100">
@@ -81,7 +99,6 @@
     </div>
   </footer>
 
-<script src="js/vendor.js"></script>
 <script src="js/all.js"></script>
 </body>
 </html>

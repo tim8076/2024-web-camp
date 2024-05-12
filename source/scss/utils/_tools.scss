@@ -9,3 +9,28 @@
   background-size: cover;
   background-position: center center;
 }
+
+.h-220 {
+  height: 220px;
+}
+
+.h-233 {
+  height: 233px;
+}
+
+.h-172 {
+  height: 172px;
+}
+
+@include mq(md) {
+  .h-md-234 {
+    height: 234px;
+  }
+  .h-md-278 {
+    height: 278px;
+  }
+  .h-md-204 {
+    height: 204px;
+  }
+}
+

@@ -1,0 +1,47 @@
+//************文字設定 START***************
+
+// 圖片取代文字
+@mixin text-hide {
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+// 文字溢出 ...
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 文字溢出 多行版本
+@mixin text-overflow-lines {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; //行數
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+//************定位 START ***************
+// position absolute
+@mixin position ($pos: absolute, $top: auto, $left: auto, $bottom: auto, $right: auto) {
+  position: $pos;
+
+  @if $top !=auto {
+    top: $top;
+  }
+
+  @if $left !=auto {
+    left: $left;
+  }
+
+  @if $bottom !=auto {
+    bottom: $bottom;
+  }
+
+  @if $right !=auto {
+    right: $right;
+  }
+}

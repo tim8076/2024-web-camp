@@ -7,9 +7,7 @@
     .arrow-icon {
       color: $color-primary-600;
       font-size: 2rem;
-      position: absolute;
-      bottom: -48px;
-      left: 50%;
+      @include position($left: 50%, $bottom: -48px);
       transform: translateX(-50%);
     }
   }

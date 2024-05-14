@@ -71,13 +71,15 @@ const filterArticles = (type) => {
   filteredArticles.forEach(dom => articleContainer.appendChild(dom));
 }
 
-blogMenu.addEventListener('click', function(e) {
-  e.preventDefault();
-  if (e.target.nodeName === 'A') {
-    const type = e.target.dataset.menuType;
-    filterArticles(type);
-    const links = blogMenu.querySelectorAll('[data-menu-type]');
-    links.forEach(link => link.classList.remove('active'));
-    e.target.classList.add('active');
-  }
-})
+if (blogMenu) {
+  blogMenu.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (e.target.nodeName === 'A') {
+      const type = e.target.dataset.menuType;
+      filterArticles(type);
+      const links = blogMenu.querySelectorAll('[data-menu-type]');
+      links.forEach(link => link.classList.remove('active'));
+      e.target.classList.add('active');
+    }
+  })
+}

@@ -4,6 +4,11 @@
       height: 792px;
     }
   }
+  .underline {
+    background-image: url('../../images/decos/underline.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
   &-img {
     @include mq(lg) {
       position: absolute;
@@ -16,6 +21,10 @@
   &-icons .icon{
     width: 40px;
     height: 40px;
+    transition: $base-transition;
+    &:hover {
+      transform: scale(1.2);
+    }
   
     @include mq(md) {
       width: 56px;

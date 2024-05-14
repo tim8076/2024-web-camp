@@ -20,9 +20,32 @@
   
   &__links a {
     transition: $base-transition;
+    position: relative;
+    border: 1px solid transparent;
+    z-index: 1;
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: $color-primary-50;
+      z-index: -1;
+    }
     &.active,
     &:hover {
-      color: $color-primary-800;
+      border: 1px solid $color-primary-900;
+      &::before {
+        top: -0.3em; 
+        bottom: -0.3em;
+        left: 0.5em;
+        right: 0.5em;
+      }
+      &::after {
+        left: -0.3em;
+        right: -0.3em;
+        top: 0.5em;
+        bottom: 0.5em;
+      }
     }
   }
 

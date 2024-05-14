@@ -27,5 +27,9 @@
       max-width: 306px;
       height: 220px;
     }
+    a:hover ~ .text {
+      transition: $base-transition;
+      background-color: $color-primary-200;
+    }
   }
 }

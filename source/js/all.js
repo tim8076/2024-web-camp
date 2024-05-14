@@ -54,3 +54,30 @@ const swiper = new Swiper('.swiper', {
     },
   }
 });
+
+// 部落格文章篩選功能
+const blogMenu = document.querySelector('[data-blog-menu]');
+const articleContainer = document.querySelector('[data-article-container]');
+const articles = [...document.querySelectorAll('[data-article-type]')];
+
+const filterArticles = (type) => {
+  let filteredArticles = [];
+  if (type === 'all') {
+    filteredArticles = [...articles];
+  } else {
+    filteredArticles = articles.filter(article => article.dataset.articleType === type);
+  }
+  articleContainer.innerHTML = '';
+  filteredArticles.forEach(dom => articleContainer.appendChild(dom));
+}
+
+blogMenu.addEventListener('click', function(e) {
+  e.preventDefault();
+  if (e.target.nodeName === 'A') {
+    const type = e.target.dataset.menuType;
+    filterArticles(type);
+    const links = blogMenu.querySelectorAll('[data-menu-type]');
+    links.forEach(link => link.classList.remove('active'));
+    e.target.classList.add('active');
+  }
+})

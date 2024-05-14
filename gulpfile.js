@@ -67,13 +67,6 @@ function babel(){
     .pipe(browserSync.stream())
 }
 
-function vendorsJs(){
-  return gulp.src([
-    './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
-  ])
-    .pipe($.concat('vendor.js'))
-    .pipe(gulp.dest(path.js.des))
-}
 function ejs() {
   return gulp.src(path.html.src)
     .pipe($.plumber())
@@ -114,6 +107,6 @@ function deploy(){
 
 exports.deploy = deploy
 
-exports.build = gulp.series(clean, images, ejs, sassTask, babel, vendorsJs)
+exports.build = gulp.series(clean, images, ejs, sassTask, babel)
 
-exports.default = gulp.series(clean, images, ejs, sassTask, babel, vendorsJs, gulp.parallel(watch, browser))
+exports.default = gulp.series(clean, images, ejs, sassTask, babel, gulp.parallel(watch, browser))

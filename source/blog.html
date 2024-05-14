@@ -12,27 +12,37 @@ current: blog
     <div class="row">
       <div class="col-lg-3 px-0 px-md-4">
         <ul class="blog-page_menu pt-6 pb-6 pl-4 pr-4 bg-primary-100 d-flex justify-content-between align-items-center flex-lg-column align-items-lg-start justify-content-lg-start
-        pl-lg-18 pr-lg-0 pt-lg-18 pb-lg-18 h-lg-100">
+        pl-lg-18 pr-lg-0 pt-lg-18 pb-lg-18 h-lg-100" data-blog-menu>
           <li class="flex-shrink-0 mb-lg-10">
-            <a href="#" class="active text-primary-600 fs-lg-4 pb-1">全部文章</a>
+            <a href="#" class="active text-primary-600 fs-lg-4 pb-1" data-menu-type="all">
+              全部文章
+            </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="text-primary-600 fs-lg-4 pb-1">UI/UX 新知</a>
+            <a href="#" class="text-primary-600 fs-lg-4 pb-1" data-menu-type="UI/UX 新知">
+              UI/UX 新知
+            </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="text-primary-600 fs-lg-4 pb-1">數位產品設計</a>
+            <a href="#" class="text-primary-600 fs-lg-4 pb-1" data-menu-type="數位產品設計">
+              數位產品設計
+            </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="text-primary-600 fs-lg-4 pb-1">平面設計</a>
+            <a href="#" class="text-primary-600 fs-lg-4 pb-1" data-menu-type="平面設計">
+              平面設計
+            </a>
           </li>
           <li class="flex-shrink-0">
-            <a href="#" class="text-primary-600 fs-lg-4 pb-1">前端開發</a>
+            <a href="#" class="text-primary-600 fs-lg-4 pb-1" data-menu-type="前端開發">
+              前端開發
+            </a>
           </li>
         </ul>
       </div>
       <div class="col-lg-9 pt-12 px-10h px-md-4 pt-lg-0 order-lg-first">
-        <ul class="blog-page__articles">
-          <li class="card__img-top d-md-flex mb-12 mb-lg-15">
+        <ul class="blog-page__articles" data-article-container>
+          <li class="card__img-top d-md-flex mb-12 mb-lg-15" data-article-type="UI/UX 新知">
             <a href="article.html" class="position-absolute top-0 left-0 w-100 h-100"></a>
             <div class="image-area col-md-5 col-lg-4">
               <img class="object-cover" src="./images/articlesImage/article-image1.png" alt="article-image1">
@@ -53,7 +63,7 @@ current: blog
                 這半年間，各種質疑聲不斷冒出，例如「太貴了，這是做給投資家看的產品，不能真的大量生產」、「續航力明顯不足，電池太重，不利於隨身攜帶使用」、「隔絕現實世界，會更加深世代或人際關係的隔閡」。</p>
             </div>
           </li>
-          <li class="card__img-top d-md-flex mb-12 mb-lg-15">
+          <li class="card__img-top d-md-flex mb-12 mb-lg-15" data-article-type="UI/UX 新知">
             <a href="article.html" class="position-absolute top-0 left-0 w-100 h-100"></a>
             <div class="image-area col-md-5 col-lg-4">
               <img class="object-cover" src="./images/articlesImage/article-image2.png" alt="article-image2">
@@ -74,7 +84,7 @@ current: blog
                 右側面板預設有兩個分頁：Inspect（偵測）, Plugins（外掛），預設開啟 Inspect。 右側面板也可以顯示 Comment，但需要先在左側面板上方點擊 對話 icon，才可以在右側面板看到所有留言紀錄。</p>
             </div>
           </li>
-          <li class="card__img-top d-md-flex mb-12 mb-lg-15">
+          <li class="card__img-top d-md-flex mb-12 mb-lg-15" data-article-type="UI/UX 新知">
             <a href="article.html" class="position-absolute top-0 left-0 w-100 h-100"></a>
             <div class="image-area col-md-5 col-lg-4">
               <img class="object-cover" src="./images/articlesImage/article-image3.png" alt="article-image3">
@@ -95,7 +105,7 @@ current: blog
                 Figma 是現在最主流的 UIUX 設計軟體，自從開創了「協作功能」之後，幾乎就是把 Adobe XD 和 Sketch 遠遠甩在後頭！</p>
             </div>
           </li>
-          <li class="card__img-top d-md-flex mb-12 mb-lg-15">
+          <li class="card__img-top d-md-flex mb-12 mb-lg-15" data-article-type="數位產品設計">
             <a href="article.html" class="position-absolute top-0 left-0 w-100 h-100"></a>
             <div class="image-area col-md-5 col-lg-4">
               <img class="object-cover" src="./images/articlesImage/article-image4.png" alt="article-image4">
@@ -115,7 +125,7 @@ current: blog
                 在當今數位科技的快速發展下，虛擬實境（VR）技術日益受到關注。VR技術為使用者提供了身臨其境的體驗，並在多個領域中得到應用，如遊戲、教育、醫療等。然而，要實現真正的沈浸感需要考慮多個因素，其中介面設計是至關重要的一環。本研究旨在探討不同介面設計對使用者在虛擬環境中的沈浸感的影響，以期為優化VR技術的使用者體驗提供參考。</p>
             </div>
           </li>
-          <li class="card__img-top d-md-flex mb-12 mb-lg-15">
+          <li class="card__img-top d-md-flex mb-12 mb-lg-15" data-article-type="數位產品設計">
             <a href="article.html" class="position-absolute top-0 left-0 w-100 h-100"></a>
             <div class="image-area col-md-5 col-lg-4">
               <img class="object-cover" src="./images/articlesImage/article-image5.png" alt="article-image5">
@@ -138,7 +148,7 @@ current: blog
               </p>
             </div>
           </li>
-          <li class="card__img-top d-md-flex mb-12 mb-lg-15">
+          <li class="card__img-top d-md-flex mb-12 mb-lg-15"  data-article-type="前端開發">
             <a href="article.html" class="position-absolute top-0 left-0 w-100 h-100"></a>
             <div class="image-area col-md-5 col-lg-4">
               <img class="object-cover" src="./images/articlesImage/article-image6.png" alt="article-image6">

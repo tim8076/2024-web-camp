@@ -1,0 +1,62 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  // 預設關閉
+  visibility: hidden;
+  opacity: 0;
+  transition: $base-transition;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    .modal-body {
+      transform: translateY(0);
+    }
+  }
+  
+  .modal-body {
+    position: relative;
+    border-radius: 8px;
+    width: 95%;
+    height: 80%;
+    background-color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    transform: translateY(-25%);
+    transition: $base-transition;
+    
+    @include mq(md) {
+      width: 75%;
+    }
+    @include mq(lg) {
+      max-width: 1076px;
+    }
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+
+  .modal-text {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    @include mq(md) {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  .modal-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

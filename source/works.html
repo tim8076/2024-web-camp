@@ -29,7 +29,7 @@ current: works
     <div class="container">
       <ul class="row mb-13">
         <li class="col-12 col-md-6 mb-13 mb-lg-18">
-          <div class="card__img-top">
+          <div class="card__img-top" data-modal-open>
             <a href="#" class="link"></a>
             <div class="image-area image-area-work">
               <img src="./images/workImages/work-img-1.png" alt="星際旅遊訂票平台圖片">
@@ -46,7 +46,7 @@ current: works
           </div>
         </li>
         <li class="col-12 col-md-6 mb-13 mb-lg-18">
-          <div class="card__img-top">
+          <div class="card__img-top" data-modal-open>
             <a href="#" class="link"></a>
             <div class="image-area">
               <img src="./images/workImages/work-image2.png" alt="理財App圖片">
@@ -63,7 +63,7 @@ current: works
           </div>
         </li>
         <li class="col-12 col-md-6 mb-13 mb-lg-18">
-          <div class="card__img-top">
+          <div class="card__img-top" data-modal-open>
             <a href="#" class="link"></a>
             <div class="image-area">
               <img src="./images/workImages/work-image3.png" alt="醫美診所官網圖片">
@@ -80,7 +80,7 @@ current: works
           </div>
         </li>
         <li class="col-12 col-md-6 mb-13 mb-lg-18">
-          <div class="card__img-top">
+          <div class="card__img-top" data-modal-open>
             <a href="#" class="link"></a>
             <div class="image-area">
               <img src="./images/workImages/work-image4.png" alt="美美美早餐店 POS 機平台圖片">
@@ -97,7 +97,7 @@ current: works
           </div>
         </li>
         <li class="col-12 col-md-6 mb-13 mb-md-0">
-          <div class="card__img-top">
+          <div class="card__img-top" data-modal-open>
             <a href="#" class="link"></a>
             <div class="image-area">
               <img src="./images/workImages/work-image5.png" alt="電影院訂票系統圖片">
@@ -114,7 +114,7 @@ current: works
           </div>
         </li>
         <li class="col-12 col-md-6">
-          <div class="card__img-top">
+          <div class="card__img-top" data-modal-open>
             <a href="#" class="link"></a>
             <div class="image-area">
               <img src="./images/workImages/work-image6.png" alt="巧克巧克形象官網設計圖片">
@@ -144,3 +144,35 @@ current: works
       </ul>
     </div>
   </section>
+  <div class="modal" data-modal>
+    <div class="modal-body">
+      <a href="#" class="modal-close" data-modal-close>
+        <span class="material-symbols-rounded fs-1">close</span>
+      </a>
+      <div class="overflow-y-scroll h-100">
+        <div class="modal-text mx-10 mx-lg-14">
+          <h2 class="text-center fs-3 fw-bold lh-lg-sm mb-2">星際旅行訂票平台</h2>
+          <p class="text-center fs-6 text-primary-500 mb-7 mb-lg-12">悠遊宇宙的夢想，從這裡開始實現</p>
+          <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+            <div class="text-primary-800 mb-7 mb-lg-0 flex-grow-lg-1 pr-lg-17">
+              <p>STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。</p>
+              <p>主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。</p>
+            </div>
+            <div class="text-primary-600 text-center pt-7 border-top border-primary-600
+                    pt-lg-0 pl-lg-7 flex-shrink-lg-0 border-top-lg-0">
+              <p class="mb-7 mb-lg-0">設計原則：<br class="d-lg-none">宇宙旅行、深色背景、強烈視覺效果</p>
+              <p>開發方式：<br class="d-lg-none">Bootstrap、Javascript、RWD</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-main px-5 pt-12 pt-lg-18">
+          <img class="h-216 object-cover rounded-3 mb-5 mb-md-7 h-md-auto" src="./images/modal/modal-image1.png" alt="modal-image1">
+          <h3 class="text-center text-primary-800 fw-bold fs-5 mb-2 mb-md-5 fs-md-4">主視覺</h3>
+          <p class="text-primary-600 mb-14">可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p> 
+          <img class="h-290 object-cover rounded-3 mb-5 mb-md-7 h-md-auto" src="./images/modal/modal-image2.png" alt="modal-image2">
+          <h3 class="text-center text-primary-800 fw-bold fs-5 mb-2 mb-md-5 fs-md-4">推薦查詢</h3>
+          <p class="text-primary-600">給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+        </div>
+      </div>
+    </div>
+  </div>

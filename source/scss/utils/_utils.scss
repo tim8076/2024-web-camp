@@ -98,22 +98,27 @@ $utilities: (
   ),
   "border": (
     "prefix": "border",
+    'responsive': true,
     "values": $border-values,
   ),
   "border-top": (
     "prefix": "border-top",
+    'responsive': true,
     "values": $border-values,
   ),
   "border-left": (
     "prefix": "border-left",
+    'responsive': true,
     "values": $border-values,
   ),
   "border-bottom": (
     "prefix": "border-bottom",
+    'responsive': true,
     "values": $border-values,
   ),
   "border-right": (
     "prefix": "border-right",
+    'responsive': true,
     "values": $border-values,
   ),
   "border-color": (
@@ -136,6 +141,16 @@ $utilities: (
   ),
   "overflow": (
     "prefix": "overflow",
+    'responsive': true,
+    "values": $overflow-list,
+  ),
+  "overflow-y": (
+    "prefix": "overflow-y",
+    'responsive': true,
+    "values": $overflow-list,
+  ),
+  "overflow-x": (
+    "prefix": "overflow-x",
     'responsive': true,
     "values": $overflow-list,
   ),

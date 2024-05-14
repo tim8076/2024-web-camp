@@ -8,9 +8,9 @@
     @include mq(lg) {
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
       bottom: 0;
-      right: calc(((100vw - 1320px) / 2) * -1);
+      left: 40%;
     }
   }
   &-icons .icon{

@@ -1,14 +1,2 @@
-"use strict";
-
-var aaa = 'aaa';
-
-var car = function car() {
-  console.log('aaa');
-};
-
-car();
-"use strict";
-
-var bear = 'baer';
-console.log(bear);
+"use strict";function _toConsumableArray(e){return _arrayWithoutHoles(e)||_iterableToArray(e)||_unsupportedIterableToArray(e)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(e,t){if(e){if("string"==typeof e)return _arrayLikeToArray(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);return"Map"===(r="Object"===r&&e.constructor?e.constructor.name:r)||"Set"===r?Array.from(e):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?_arrayLikeToArray(e,t):void 0}}function _iterableToArray(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}function _arrayWithoutHoles(e){if(Array.isArray(e))return _arrayLikeToArray(e)}function _arrayLikeToArray(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,a=new Array(t);r<t;r++)a[r]=e[r];return a}var showModal,closeModal,header=document.querySelector("[data-header]"),menuBtn=document.querySelector("[data-menu-button]"),menu=document.querySelector("[data-menu-phone]"),modalOpenElems=document.querySelectorAll("[data-modal-open]"),modal=document.querySelector("[data-modal]"),modalClose=document.querySelector("[data-modal-close]");menuBtn.addEventListener("click",function(e){e.preventDefault(),"menu"===e.target.innerText?e.target.innerText="close":e.target.innerText="menu",menu.classList.toggle("showMenu"),document.querySelector("body").classList.toggle("bodyFixed")}),modal&&(showModal=function(e){e.preventDefault(),modal.classList.add("open")},closeModal=function(e){e.preventDefault(),modal.classList.remove("open")},modalOpenElems.forEach(function(e){e.addEventListener("click",showModal)}),modalClose.addEventListener("click",closeModal));var swiper=new Swiper(".swiper",{loop:!0,autoplay:!0,pagination:{el:".swiper-pagination"},speed:400,spaceBetween:20,breakpoints:{768:{slidesPerView:2},1400:{slidesPerView:3,spaceBetween:30}}}),blogMenu=document.querySelector("[data-blog-menu]"),articleContainer=document.querySelector("[data-article-container]"),articles=_toConsumableArray(document.querySelectorAll("[data-article-type]")),filterArticles=function(t){var e=[],e="all"===t?_toConsumableArray(articles):articles.filter(function(e){return e.dataset.articleType===t});articleContainer.innerHTML="",e.forEach(function(e){return articleContainer.appendChild(e)})};blogMenu&&blogMenu.addEventListener("click",function(e){var t;e.preventDefault(),"A"===e.target.nodeName&&(t=e.target.dataset.menuType,filterArticles(t),blogMenu.querySelectorAll("[data-menu-type]").forEach(function(e){return e.classList.remove("active")}),e.target.classList.add("active"))});
 //# sourceMappingURL=all.js.map

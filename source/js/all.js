@@ -18,17 +18,39 @@ menuBtn.addEventListener('click', function(e) {
 })
 
 // modal 視窗
-const showModal = (e) => {
-  e.preventDefault();
-  modal.classList.add('open');
+if (modal) {
+  const showModal = (e) => {
+    e.preventDefault();
+    modal.classList.add('open');
+  }
+  const closeModal = (e) => {
+    e.preventDefault();
+    modal.classList.remove('open');
+  }
+
+  modalOpenElems.forEach(modal => {
+    modal.addEventListener('click', showModal);
+  })
+  modalClose.addEventListener('click', closeModal);
 }
 
-const closeModal = (e) => {
-  e.preventDefault();
-  modal.classList.remove('open');
-}
-
-modalOpenElems.forEach(modal => {
-  modal.addEventListener('click', showModal);
-})
-modalClose.addEventListener('click', closeModal);
+// 輪播效果
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  autoplay: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  speed: 400,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
+});

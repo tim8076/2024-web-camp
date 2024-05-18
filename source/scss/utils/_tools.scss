@@ -10,6 +10,11 @@
   background-position: center center;
 }
 
+// 內容不夠時，設置 min-height，以免footer往上跑
+.min-md-vh {
+  min-height: calc(100vh - 452px);
+}
+
 .h-290 {
   height: 290px;
 }

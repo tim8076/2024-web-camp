@@ -40,7 +40,8 @@ const swiper = new Swiper('.swiper', {
   autoplay: true,
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.my-custom-pagination',
+    clickable: true,
   },
   speed: 400,
   spaceBetween: 20,

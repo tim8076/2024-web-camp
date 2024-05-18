@@ -1,0 +1,45 @@
+---
+title: 聯絡我
+layout: ./source/layout.ejs
+engine: ejs
+current: contact
+---
+
+<section class="pt-12 pb-18 bg-primary-100 py-lg-30">
+  <h2 class="secondary-title mb-12 mb-lg-18">與我聯絡</h2>
+  <div class="container">
+    <form class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="mb-3">
+          <label for="company" class="d-block mb-2">公司名稱</label>
+          <input type="text" id="company" class="form-control" autofocus>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="mb-3">
+          <label for="name" class="d-block mb-2">聯絡姓名</label>
+          <input type="text" id="name" class="form-control">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="mb-3">
+          <label for="phone" class="d-block mb-2">連絡電話</label>
+          <input type="number" id="phone" class="form-control">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="mb-3">
+          <label for="email" class="d-block mb-2">聯絡郵件</label>
+          <input type="email" id="email" class="form-control">
+        </div>
+      </div>
+      <div class="col-lg-10 mb-7">
+        <label for="comment" class="d-block mb-2">簡述您的案件需求</label>
+        <textarea class="form-control resize-none mt-2" id="comment" rows="6"></textarea>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-md btn--dark rounded-0">送出表單</button>
+      </div>
+    </form>
+  </div>
+</section>

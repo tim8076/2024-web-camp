@@ -6,11 +6,9 @@
   padding-right: $gutter-width / 2;
   @include mq(md){
     max-width: 740px;
-    padding-right: 0;
-    padding-left: 0;
   }
   @include mq(lg){
-    max-width: 1296px;
+    max-width: 1320px;
   }
 }
 

@@ -1,9 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Noto Sans TC", sans-serif;
   font-size: $fs-base; // 1rem
   line-height: $lh-base; // 1.5
   font-weight: $font-weight-normal; //400
   color: $color-primary-700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 a {
